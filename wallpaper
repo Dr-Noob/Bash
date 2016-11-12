@@ -1,5 +1,12 @@
-#!/bin/bash
-ruta=/home/pablo/Imágenes/Wallpapers
+#!/bin/bash -u
+#Establece una imagen de manera aleatoria como fondo de escritorio y otra como salvapantallas
+#Funciona únicamente en gnome
+#Es necesario poner en ruta(justo abajo)la ruta de donde se quieren coger las imagenes
+ruta=
+#Por ejemplo, ruta=/home/juan/Imagenes/Wallpapers
+#Es posible lanzarlo al iniciar el pc, una forma de hacerlo es guardandolo como /etc/systemd/system/randomwallpapers.service,
+#ejecutar systemctl enable randomwallpapers.service y por ultimo añadir una linea en /etc/profile, especificando la ruta donde
+#se encuentra el propio script.
 i=$(ls -1 $ruta | wc -l)
 aleatorio1=$((1 + RANDOM % i))
 aleatorio2=$((1 + RANDOM % i))
@@ -8,9 +15,3 @@ string2=$(ls $ruta | head -$aleatorio2 | tail -1)
 
 gsettings set org.gnome.desktop.background picture-uri "file:////$ruta/$string1"
 gsettings set org.gnome.desktop.screensaver picture-uri "file:///$ruta/$string2"
- 
-
-#echo "Hay $i archivos, el aleatorio es $aleatorio, y el archivo, $string"
-
-#Lanzado desde /etc/systemd/system/randomwallpapers.service
-#systemctl enable randomwallpapers.service
