@@ -1,4 +1,6 @@
 #!/bin/bash -u
+#Prueba un ejecutable un numero n de veces y obtiene la media en milisegundos
+#Se recomienda hacer pruebas siempre con la misma carga de cpu, preferiblemente, la minima posible
 
 if [ $# -ne 3 ]
 then
