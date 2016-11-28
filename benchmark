@@ -36,6 +36,8 @@ do
 	segundos=$(cat $fichero | cut -f2 -d$'\t' | head -n +2 | tail -n +2 | cut -d'm' -f2 | cut -d's' -f1 | cut -d'.' -f1)
 	milisegundos=$(cat $fichero | cut -f2 -d$'\t' | head -n +2 | tail -n +2 | cut -d'm' -f2 | cut -d's' -f1 | cut -d'.' -f2)
 	minutos=$(cat $fichero | cut -f2 -d$'\t' | head -n +2 | tail -n +2 | cut -d'm' -f1)
+	if [ $segundos -ne 0 ]; then milisegundos=$(echo $segundos | sed 's/^0*//'); fi
+	if [ $milisegundos -ne 0 ]; then milisegundos=$(echo $milisegundos | sed 's/^0*//'); fi
 	let minutos=$minutos*60	
 	let segundos=$segundos+$minutos
 	let milisegundos=$milisegundos+$segundos*1000
