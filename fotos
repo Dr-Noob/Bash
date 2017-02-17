@@ -1,3 +1,5 @@
+#Al descargar las fotos de flickr en un ordenador, es posible que se organizen por defecto en carpetas, y se guarden
+#mas cosas a parte de las imagenes. Este script mueve las fotos, que es lo que interesa tener, a una carpeta aparte
 #!/bin/bash -u
 
 carpetaFotos=0
