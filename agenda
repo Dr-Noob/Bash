@@ -1,5 +1,6 @@
 #!/bin/bash -u
-
+#Añade eventos/fechas que se quieren registrar(nombre y dia) al bashrc, de manera que, cuando se inicia la terminal, avisa de cuantos
+#dias quedan para una fecha determinada. Se puede añadir, eliminar, consultar las fechas y eliminarlos todos a la vez
 #VARIABLES
 calculo=0
 reg=0
