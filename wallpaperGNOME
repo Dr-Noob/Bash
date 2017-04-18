@@ -1,4 +1,5 @@
 #!/bin/bash -u
+#SOLO FUNCIONA EN GNOME
 #Establece una imagen de manera aleatoria como fondo de escritorio y otra como salvapantallas
 #Funciona únicamente en gnome
 #Es necesario poner en ruta(justo abajo)la ruta de donde se quieren coger las imagenes
