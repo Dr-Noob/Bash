@@ -1,10 +1,11 @@
 #!/bin/bash -u
-#SOLO FUNCIONA EN GNOME
-#Establece una imagen de manera aleatoria como fondo de escritorio y otra como salvapantallas
-#Funciona únicamente en gnome
+#FUNCIONA UNICAMENTE EN GNOME
+################################################################################################
+##Establece una imagen de manera aleatoria como fondo de escritorio y otra como salvapantallas##
+################################################################################################
 #Es necesario poner en ruta(justo abajo)la ruta de donde se quieren coger las imagenes
 ruta=
-#Por ejemplo, ruta=/home/juan/Imagenes/Wallpapers
+#ruta=/home/usuario/Imagenes/Wallpapers
 #Es posible lanzarlo al iniciar el pc, una forma de hacerlo es guardandolo como /etc/systemd/system/randomwallpapers.service,
 #ejecutar systemctl enable randomwallpapers.service y por ultimo añadir una linea en /etc/profile, especificando la ruta donde
 #se encuentra el propio script.
