@@ -1,2 +1,2 @@
 # BashScripts
-Some useful bash scripts
+Scripts utiles de todo tipo para bash
