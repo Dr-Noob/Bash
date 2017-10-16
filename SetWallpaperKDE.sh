@@ -1,9 +1,10 @@
+#!/bin/bash -u
 #THIS SCRIPT WORKS ONLY IF YOU'RE USING KDE
 ##############################################
 ##KDE script to change the desktop wallpaper##
 ##############################################
-#To get this script working, you first need to change the default behaviour of 
-#KDE Wallpaper. In appearance settings, set "Type of desktop background" to 
+#To get this script working, you first need to change the default behaviour of
+#KDE Wallpaper. In appearance settings, set "Type of desktop background" to
 #slideshowk, and set the folder where you want to copy a temporary wallpaper image
 
 RED="\033[1;31m"
@@ -57,4 +58,4 @@ then
 	exit 1
 fi
 
-echo 'The wallpaper '$1' was sucessfully set' 
+echo 'The wallpaper '$1' was sucessfully set'
