@@ -1,4 +1,6 @@
 #!/bin/bash -u
+#http://patorjk.com/software/taag/#p=display&h=0&v=1&f=Banner3&t=0
+#https://github.com/KittyKatt/screenFetch/blob/e2fd2b9a4eb3e19c77d5b4b83b8aefee877a2eb0/screenfetch-dev
 
 n0_1="  #####   "
 n0_2=" ##   ##  "
