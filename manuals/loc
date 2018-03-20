@@ -1,0 +1,14 @@
+.\" Manpage for loc
+.TH man 1 "20 Mar 2018" "1.0" "loc man page"
+.SH NAME
+loc \- print lines of code recursively in a directory
+.SH SYNOPSIS
+loc directory
+.SH DESCRIPTION
+loc(Lines Of Code) will search recursively in the directory specified by the argument and counts the number of lines in each text file, and prints a summary of total lines of code, differenciating separate programming language if present. If code files have typical extensions(such as .c .java ...), loc will print a simple ASCII art showing the programming language.
+.SH OPTIONS
+Directory to search for must be specified
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Dr-Noob(https://github.com/Dr-Noob)
